@@ -23,3 +23,13 @@ window.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+navItems.forEach((item) => {
+  const link = item.querySelector("a");
+  const sectionId = link.getAttribute("href").substring(1);
+
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    showSection(sectionId);
+  });
+});
