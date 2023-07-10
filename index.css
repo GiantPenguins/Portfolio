@@ -23,7 +23,8 @@ body {
 }
 
 .column:nth-child(even) {
-  background-color: var(--main-pink);
+  /* background-color: var(--main-pink); */
+  min-height: 100vh;
 }
 
 @media screen and (max-width: 768px) {
@@ -44,7 +45,7 @@ body {
 
 .stick {
   position: sticky;
-  top: 80px;
+  top: 70px;
 }
 
 header {
@@ -52,7 +53,7 @@ header {
   font-weight: bold;
   font-size: 3rem;
   color: var(--main-white);
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
 }
 
 subHeader {
