@@ -60,3 +60,31 @@ p {
   font-size: 1rem;
   color: var(--main-gray);
 }
+
+.navigation-container {
+  padding: 10px;
+  font-family: var(--main-font);
+}
+
+.navigation-container nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-container nav ul li {
+  margin-bottom: 5px;
+}
+
+.navigation-container nav ul li a {
+  color: #333;
+  font-weight: bold;
+}
+
+.navigation-container nav ul li a:hover {
+  color: #555;
+}
+.navigation-container nav ul li.active a {
+  color: red;
+  font-weight: bold;
+}
