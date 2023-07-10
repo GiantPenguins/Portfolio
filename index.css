@@ -1,6 +1,6 @@
 body {
-  margin: 2%;
-  padding: 2%;
+  margin: 24px;
+  padding: 24px;
   background-color: var(--main-black);
 }
 
@@ -41,6 +41,22 @@ body {
   }
 }
 
-h2 {
+header {
   font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 3rem;
+  color: var(--main-white);
+  margin-bottom: 20px;
+}
+
+subHeader {
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+  color: var(--main-white);
+}
+
+p {
+  font-family: var(--main-font);
+  font-size: 1rem;
+  color: var(--main-gray);
 }
