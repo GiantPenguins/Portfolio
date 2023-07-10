@@ -1,0 +1,46 @@
+body {
+  margin: 2%;
+  padding: 2%;
+  background-color: var(--main-black);
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+.sticky-container {
+  position: sticky;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+}
+
+.column:nth-child(odd) {
+  background-color: var(--main-blue);
+}
+
+.column:nth-child(even) {
+  background-color: var(--main-pink);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .column {
+    padding: 10px;
+  }
+}
+
+h2 {
+  font-family: var(--main-font);
+}
