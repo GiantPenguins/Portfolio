@@ -24,14 +24,11 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-/* Scroll Navigation */
+// Scrolling
 
 function scrollToTop() {
-  const aboutSection = document.getElementById("about");
-  const offset = aboutSection.offsetTop;
-
   window.scrollTo({
-    top: offset,
+    top: 70,
     behavior: "smooth",
   });
 }
@@ -45,4 +42,56 @@ function scrollToProjects() {
     behavior: "smooth",
   });
 }
-setTimeout(scrollToProjects, 100);
+
+// function changeActiveNav() {
+//   const navLinks = document.querySelectorAll(
+//     ".navigation-container nav ul li a"
+//   );
+//   const sections = document.querySelectorAll(".column > *");
+
+//   let currentSection = sections[0];
+//   sections.forEach((section) => {
+//     const sectionId = section.getAttribute("id");
+//     if (sectionId && window.scrollY >= section.offsetTop - 100) {
+//       currentSection = section;
+//     }
+//   });
+
+//   let currentLink;
+//   navLinks.forEach((link) => {
+//     if (link.getAttribute("href") === `#${currentSection.id}`) {
+//       currentLink = link;
+//     }
+//   });
+
+//   navLinks.forEach((link) => {
+//     link.classList.remove("active");
+//   });
+
+//   currentLink.classList.add("active");
+// }
+
+// window.addEventListener("scroll", changeActiveNav);
+
+window.onload = function () {
+  var boldText = document.getElementsByTagName("b");
+  for (var i = 0; i < boldText.length; i++) {
+    boldText[i].style.textShadow = "var(--text-glow)";
+  }
+  setTimeout(function () {
+    for (var i = 0; i < boldText.length; i++) {
+      boldText[i].style.textShadow = "";
+    }
+  }, 2000);
+};
+window.onload = function () {
+  var boldText = document.getElementsByTagName("b");
+  for (var i = 0; i < boldText.length; i++) {
+    boldText[i].style.textShadow = "var(--text-glow)";
+  }
+  setTimeout(function () {
+    for (var i = 0; i < boldText.length; i++) {
+      boldText[i].style.textShadow = "";
+    }
+  }, 3000);
+};
