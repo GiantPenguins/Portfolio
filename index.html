@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <div id="about"></div>
   <div class="cursor-shadow"></div>
   <head>
     <title>Tommy Hooper</title>
@@ -13,7 +14,7 @@
   </head>
 
   <body>
-<!-- Left Column -->
+    <!-- Left Column -->
     <div class="container">
       <div class="column sticky-container">
         <div class="stick">
@@ -26,15 +27,15 @@
             <b>modern web standards</b>, I strive to create
             <b>visually stunning and highly functional websites</b>.
           </p>
-<!-- Navigation -->
+          <!-- Navigation -->
           <div class="navigation-container">
             <nav>
               <ul>
                 <li class="active">
-                  <a href="#about">About</a>
+                  <a href="#" onclick="scrollToTop()">About</a>
                 </li>
                 <li>
-                  <a href="#projects">Projects</a>
+                  <a href="#projects" onclick="scrollToProjects()">Projects</a>
                 </li>
                 <li>
                   <a href="#contact">Contact</a>
@@ -42,9 +43,9 @@
               </ul>
             </nav>
           </div>
-<!-- Socials -->
+          <!-- Socials -->
           <div id="socials" class="socials">
-            <subHeader>Contact Me</subHeader><br><br>
+            <subHeader>Contact Me</subHeader><br /><br />
             <a href="#" target="_blank" class="socialButton">
               <i class="fa fa-facebook-square"></i
             ></a>
@@ -66,57 +67,86 @@
           </div>
         </div>
       </div>
-<!-- Right Column -->
+      <!-- Right Column -->
       <div class="column">
-<!-- About me -->
-      <subHeader>About me</subHeader>
-      <p>Hello, my name is Tommy Hooper, I am a passionate and dedicated <b>website developer</b>. With a strong background in <b>website design</b> 
-      and programming, I strive to create <b>visually appealing</b> and <b>functional websites</b> that provide an exceptional user experience.
-      I have honed my skills in various web technologies, including: <bg> HTML, CSS and JavaScript</bg>.</p><p>I stay up-to-date with the latest trends 
-      and best practices in the industry, allowing me to deliver <b>modern and cutting-edge solutions</b> for my clients.
-      What sets me apart is not only my <b>technical expertise</b> but also my commitment to understanding my clients'
-      <bg>unique needs and goals.</bg></p>
-      <p>I believe that <b>effective communication and collaboration</b> are key to delivering successful web projects.
-      I take pride in building <b>strong relationships</b> with my clients and working closely with them to bring
-      <bg>their vision to life.</bg></p>
-      <p>Whether you need a simple <b>portfolio website</b>, an <b>e-commerce platform</b>, or a <b>custom web application</b>,
-      I am here to help. I am passionate about what I do, and I genuinely enjoy the process of <bg>transforming ideas into reality.</bg></p>
-      <p><b>Thank you</b> for visiting my portfolio. I would love to discuss your web development needs and how I can contribute to the success
-      of your project. Please feel free to reach out to me through the <bg>contact information provided below.</bg></p>
+        <!-- About me -->
+        <subHeader id="about">About me</subHeader>
+        <p>
+          Hello, my name is Tommy Hooper, I am a passionate and dedicated
+          <b>website developer</b>. With a strong background in
+          <b>website design</b> and programming, I strive to create
+          <b>visually appealing</b> and <b>functional websites</b> that provide
+          an exceptional user experience. I have honed my skills in various web
+          technologies, including: <bg> HTML, CSS and JavaScript</bg>.
+        </p>
+        <p>
+          I stay up-to-date with the latest trends and best practices in the
+          industry, allowing me to deliver
+          <b>modern and cutting-edge solutions</b> for my clients. What sets me
+          apart is not only my <b>technical expertise</b> but also my commitment
+          to understanding my clients' <bg>unique needs and goals.</bg>
+        </p>
+        <p>
+          I believe that <b>effective communication and collaboration</b> are
+          key to delivering successful web projects. I take pride in building
+          <b>strong relationships</b> with my clients and working closely with
+          them to bring <bg>their vision to life.</bg>
+        </p>
+        <p>
+          Whether you need a simple <b>portfolio website</b>, an
+          <b>e-commerce platform</b>, or a <b>custom web application</b>, I am
+          here to help. I am passionate about what I do, and I genuinely enjoy
+          the process of <bg>transforming ideas into reality.</bg>
+        </p>
+        <p>
+          <b>Thank you</b> for visiting my portfolio. I would love to discuss
+          your web development needs and how I can contribute to the success of
+          your project. Please feel free to reach out to me through the
+          <bg>contact information provided below.</bg>
         </p>
 
-<!-- Projects -->
-          <subHeader>Projects</subHeader>
-          <div class="Projects">
-            <div class="project-item">
-              <a href="#" target="_blank">
-                <img src="https://lirp-cdn.multiscreensite.com/ee3d2292/dms3rep/multi/opt/Full-bleed-2-1903x533-1920w.jpg"
-                 alt="Autoblast website design">
-                 </a>
-                <p><bg>Autoblast Project</bg>
-              One of my first websites, a basic slideshow, automatically scrolling through background images.</p>
-            </div>
-            <div class="project-item">
-              <a href="#" target="_blank">
-                <img src="https://images.pexels.com/photos/321552/pexels-photo-321552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                 alt="A monkey">
-                 </a>
-                <p><bg>Monkey Time</bg>
-              I need to build more projects, so I can remove this Monkey.</p>
-            </div>
-            <div class="project-item">
-              <a href="#" target="_blank">
-                <img src="https://images.pexels.com/photos/16730751/pexels-photo-16730751/free-photo-of-smiling-dog-in-hat.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                 alt="A monkey">
-                 </a>
-                <p><bg>Dog Time</bg>
-              Sumbrero Dog is just a placeholder.</p>
-            </div>
-
+        <!-- Projects -->
+        <subHeader>Projects</subHeader>
+        <div class="Projects" id="projects">
+          <div class="project-item">
+            <a href="#" target="_blank">
+              <img
+                src="https://lirp-cdn.multiscreensite.com/ee3d2292/dms3rep/multi/opt/Full-bleed-2-1903x533-1920w.jpg"
+                alt="Autoblast website design"
+              />
+            </a>
+            <p>
+              <bg>Autoblast Project</bg>
+              One of my first websites, a basic slideshow, automatically
+              scrolling through background images.
+            </p>
+          </div>
+          <div class="project-item">
+            <a href="#" target="_blank">
+              <img
+                src="https://images.pexels.com/photos/321552/pexels-photo-321552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="A monkey"
+              />
+            </a>
+            <p>
+              <bg>Monkey Time</bg>
+              I need to build more projects, so I can remove this Monkey.
+            </p>
+          </div>
+          <div class="project-item">
+            <a href="#" target="_blank">
+              <img
+                src="https://images.pexels.com/photos/16730751/pexels-photo-16730751/free-photo-of-smiling-dog-in-hat.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="A monkey"
+              />
+            </a>
+            <p>
+              <bg>Dog Time</bg>
+              Sumbrero Dog is just a placeholder.
+            </p>
+          </div>
         </div>
       </div>
-      
     </div>
   </body>
 </html>
-

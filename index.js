@@ -24,12 +24,25 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-navItems.forEach((item) => {
-  const link = item.querySelector("a");
-  const sectionId = link.getAttribute("href").substring(1);
+/* Scroll Navigation */
 
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
-    showSection(sectionId);
+function scrollToTop() {
+  const aboutSection = document.getElementById("about");
+  const offset = aboutSection.offsetTop;
+
+  window.scrollTo({
+    top: offset,
+    behavior: "smooth",
   });
-});
+}
+
+function scrollToProjects() {
+  const projectsSection = document.getElementById("projects");
+  const offset = projectsSection.offsetTop;
+
+  window.scrollTo({
+    top: offset,
+    behavior: "smooth",
+  });
+}
+setTimeout(scrollToProjects, 100);
