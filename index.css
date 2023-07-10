@@ -18,7 +18,7 @@ body {
 }
 
 .column:nth-child(odd) {
-  background-color: var(--main-blue);
+  /* background-color: var(--main-blue); */
 }
 
 .column:nth-child(even) {
@@ -59,17 +59,23 @@ p {
   font-family: var(--main-font);
   font-size: 1rem;
   color: var(--main-gray);
+  padding-bottom: 50px;
 }
+
+/* Nav */
 
 .navigation-container {
   padding: 10px;
   font-family: var(--main-font);
+  /* border: 1px solid red; */
+  /* border-radius: 10px; */
 }
 
 .navigation-container nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  position: relative; /* Add position relative to the container */
 }
 
 .navigation-container nav ul li {
@@ -77,14 +83,21 @@ p {
 }
 
 .navigation-container nav ul li a {
-  color: #333;
+  text-decoration: none;
+  color: var(--main-white);
   font-weight: bold;
+  transition: 0.2s;
 }
 
-.navigation-container nav ul li a:hover {
-  color: #555;
-}
+.navigation-container nav ul li a:hover,
 .navigation-container nav ul li.active a {
-  color: red;
+  color: var(--main-blue);
+}
+
+.navigation-container nav ul li.active a {
+  color: var(--main-blue);
   font-weight: bold;
+  transition: 0.6s;
+  margin-left: 75%;
+  line-height: 1em;
 }
