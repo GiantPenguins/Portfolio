@@ -11,6 +11,7 @@ b {
 .container {
   display: flex;
   width: 100%;
+  position: sticky;
 }
 
 .column {
@@ -22,6 +23,7 @@ b {
   /* background-color: var(--main-blue); */
   min-height: 100vh;
   position: sticky;
+  top: 0;
 }
 
 .column:nth-child(even) {
@@ -42,6 +44,11 @@ b {
   .column {
     padding: 16px;
   }
+}
+
+.stick {
+  position: sticky;
+  top: 80px;
 }
 
 header {
@@ -102,7 +109,7 @@ p {
 }
 
 .navigation-container nav ul li.active a {
-  color: var(--main-blue); */
+  color: var(--main-blue);
   font-weight: bold;
   transition: 0.6s;
   margin-left: 24px;
