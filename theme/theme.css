@@ -12,6 +12,23 @@
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+b {
+  color: var(--highlight-white);
+}
+
+bg {
+  color: var(--highlight-white);
+  text-shadow: 1px 1px 2px, 0 0 1em, 0 0 0.1em;
+}
+
+p {
+  font-family: var(--main-font);
+  font-size: 1rem;
+  color: var(--main-gray);
+  padding-bottom: 48px;
+}
+
+/* Cursor */
 .cursor-shadow {
   position: fixed;
   width: 50%;
