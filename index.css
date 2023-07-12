@@ -9,11 +9,11 @@ body {
   scroll-behavior: smooth;
 }
 
-.container {
+/* .container {
   display: flex;
   width: 100%;
   position: sticky;
-}
+} */
 
 .column {
   flex: 1;
