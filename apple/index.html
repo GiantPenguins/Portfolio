@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Apple</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS IMPORTS -->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="theme/theme.css" />
+    <link rel="stylesheet" href="navigation/nav.css" />
+    <link rel="stylesheet" href="picture-slider/slider.css" />
+    <!-- JAVASCRIPT IMPORTS -->
+    <script src="index.js"></script>
+    <script src="navigation/nav.js"></script>
+    <script src="picture-slider/slider.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="navbar-header">
+        <button class="navbar-toggler" type="button" onclick="toggleNavbar()">
+          <img
+            class="navbar-logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+            alt="Apple company logo"
+          />
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img
+            class="navbar-logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+            alt="Apple company logo"
+          />
+        </a>
+      </div>
+      <div class="navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <button class="dropbtn">
+              <a class="navButton" href="#" target="_blank">iPhone</a>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">iPhone 14 Pro</a>
+              <a href="#">iPhone 14</a>
+              <a href="#">Show All</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <button class="dropbtn">
+              <a class="navButton" href="#" target="_blank">iPad</a>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">iPad Pro</a>
+              <a href="#">iPad Air</a>
+              <a href="#">Show All</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <button class="dropbtn">
+              <a class="navButton" href="#" target="_blank">Mac</a>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Macbook Pro</a>
+              <a href="#">Macbook Air</a>
+              <a href="#">Show All</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Slider Container -->
+
+    <div class="slideshow-container">
+      <div class="mySlides fade active">
+        <img
+          src="https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg"
+          class="containerImg"
+        />
+        <div class="text">MacBook Pro</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="https://images.pexels.com/photos/797519/pexels-photo-797519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        />
+        <div class="text">iPhone 14 Pro</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="https://images.pexels.com/photos/1334597/pexels-photo-1334597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        />
+        <div class="text">iPad Pro</div>
+      </div>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- Picture Grid -->
+  </body>
+</html>
