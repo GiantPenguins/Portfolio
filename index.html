@@ -1,178 +1,79 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tommy Hooper</title>
+    <title>Apple</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS IMPORTS -->
     <link rel="stylesheet" href="index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <link rel="stylesheet" href="theme/theme.css" />
+    <link rel="stylesheet" href="navigation/nav.css" />
+    <link rel="stylesheet" href="picture-slider/slider.css" />
+    <!-- JAVASCRIPT IMPORTS -->
     <script src="index.js"></script>
+    <script src="navigation/nav.js"></script>
   </head>
 
   <body>
-    <!-- Left Column -->
-    <div class="container">
-      <div class="column sticky-container">
-        <div class="stick">
-          <header>Tommy Hooper</header>
-          <subHeader>A <bg>Web Developer</bg> For <bg>You</bg>. </subHeader>
-          <p>
-            I specialize in <b>building</b> and <b>designing</b> accessible
-            websites tailored to <b>your specific needs</b> and preferences.
-            With a keen focus on <b>user experience</b> and
-            <b>modern web standards</b>, I strive to create
-            <b>visually stunning and highly functional websites</b>.
-          </p>
-          <!-- Navigation -->
-          <div class="navigation-container">
-            <nav>
-              <ul>
-                <li class="active">
-                  <a href="#" onclick="scrollToTop()">About</a>
-                </li>
-                <li>
-                  <a href="#projects" onclick="scrollToProjects()">Projects</a>
-                </li>
-                <li>
-                  <a href="#contact">Contact</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <!-- Socials -->
-          <div id="socials" class="socials">
-            <subHeader>Contact Me</subHeader><br /><br />
-            <a href="#" target="_blank" class="socialButton">
-              <i class="fa fa-facebook-square"></i
-            ></a>
-            <a href="#" target="_blank" class="socialButton"
-              ><i class="fa fa-instagram"></i
-            ></a>
-            <a href="#" target="_blank" class="socialButton"
-              ><i class="fa fa-linkedin"></i
-            ></a>
-            <a href="#" target="_blank" class="socialButton"
-              ><i class="fa fa-github"></i
-            ></a>
-            <a href="#" target="_blank" class="socialButton"
-              ><i class="fa fa-at"></i
-            ></a>
-            <a href="#" target="_blank" class="socialButton"
-              ><i class="fa fa-phone"></i
-            ></a>
-          </div>
-        </div>
+    <nav class="navbar">
+      <div class="navbar-header">
+        <button class="navbar-toggler" type="button" onclick="toggleNavbar()">
+          <img
+            class="navbar-logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+            alt="Apple company logo"
+          />
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img
+            class="navbar-logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+            alt="Apple company logo"
+          />
+        </a>
       </div>
-      <!-- Right Column -->
-      <div class="column">
-        <!-- About me -->
-        <subHeader id="about">About me</subHeader>
-        <p>
-          Hello, my name is Tommy Hooper, I am a passionate and dedicated
-          <b>website developer</b>. With a strong background in
-          <b>website design</b> and programming, I strive to create
-          <b>visually appealing</b> and <b>functional websites</b> that provide
-          an exceptional user experience. I have honed my skills in various web
-          technologies, including: <b> HTML, CSS and JavaScript</b>.
-        </p>
-        <p>
-          I stay up-to-date with the latest trends and best practices in the
-          industry, allowing me to deliver
-          <b>modern and cutting-edge solutions</b> for my clients. What sets me
-          apart is not only my <b>technical expertise</b> but also my commitment
-          to understanding my clients' <b>unique needs and goals.</b>
-        </p>
-        <p>
-          I believe that <b>effective communication and collaboration</b> are
-          key to delivering successful web projects. I take pride in building
-          <b>strong relationships</b> with my clients and working closely with
-          them to bring <b>their vision to life.</b>
-        </p>
-        <p>
-          Whether you need a simple <b>portfolio website</b>, an
-          <b>e-commerce platform</b>, or a <b>custom web application</b>, I am
-          here to help. I am passionate about what I do, and I genuinely enjoy
-          the process of <b>transforming ideas into reality.</b>
-        </p>
-        <p>
-          <b>Thank you</b> for visiting my portfolio. I would love to discuss
-          your web development needs and how I can contribute to the success of
-          your project. Please feel free to reach out to me through the
-          <b>contact information provided below.</b>
-        </p>
-
-        <!-- Projects -->
-        <subHeader>Projects</subHeader>
-        <div class="Projects" id="projects">
-          <div class="project-item">
-            <a href="#" target="_blank">
-              <img
-                src="https://lirp-cdn.multiscreensite.com/ee3d2292/dms3rep/multi/opt/Full-bleed-2-1903x533-1920w.jpg"
-                alt="Autoblast website design"
-              />
-            </a>
-            <p>
-              <bg>Autoblast Project</bg>
-              One of my first websites, a basic slideshow, automatically
-              scrolling through background images.
-            </p>
-          </div>
-          <div class="project-item">
-            <a href="#" target="_blank">
-              <img
-                src="https://images.pexels.com/photos/321552/pexels-photo-321552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="A monkey"
-              />
-            </a>
-            <p>
-              <bg>Monkey Time</bg>
-              I need to build more projects, so I can remove this Monkey.
-            </p>
-          </div>
-          <div class="project-item">
-            <a href="#" target="_blank">
-              <img
-                src="https://images.pexels.com/photos/16730751/pexels-photo-16730751/free-photo-of-smiling-dog-in-hat.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="A monkey"
-              />
-            </a>
-            <p>
-              <bg>Dog Time</bg>
-              Sumbrero Dog is just a placeholder.
-            </p>
-          </div>
-        </div>
-
-        <!-- Contact Me -->
-        <subHeader id="contact">Contact Me</subHeader>
-        <p>
-          If you would like to get in touch with me, feel free to reach out
-          using one of the following methods:
-        </p>
-        <ul>
-          <li>
-            Email:
-            <a href="mailto:your-email@example.com">your-email@example.com</a>
+      <div class="navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <button class="dropbtn">
+              <a class="navButton" href="#" target="_blank">iPhone</a>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">iPhone 14 Pro</a>
+              <a href="#">iPhone 14</a>
+              <a href="#">Show All</a>
+            </div>
           </li>
-          <li>Phone: <a href="tel:+1234567890">+1234567890</a></li>
-          <li>
-            LinkedIn:
-            <a
-              href="https://www.linkedin.com/in/your-linkedin-profile"
-              target="_blank"
-              >Your LinkedIn Profile</a
-            >
+
+          <li class="nav-item dropdown">
+            <button class="dropbtn">iPad</button>
+            <div class="dropdown-content">
+              <a href="#">iPad Pro</a>
+              <a href="#">iPad Air</a>
+              <a href="#">Show All</a>
+            </div>
           </li>
-          <li>
-            GitHub:
-            <a href="https://github.com/your-github-username" target="_blank"
-              >Your GitHub Profile</a
-            >
+
+          <li class="nav-item dropdown">
+            <button class="dropbtn">Mac</button>
+            <div class="dropdown-content">
+              <a href="#">Macbook Pro</a>
+              <a href="#">Macbook Air</a>
+              <a href="#">Show All</a>
+            </div>
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
+    <!-- <div class="container">
+      <div class="wrapper">
+        <img
+          src="
+        https://static2.o9.de/resource/image/1448900/OCCL_Ratio_1x1/600/600/dde7a40bae453cb73e625b5edf724460/F8AE33EC630BF66CB293288C658B29B8/apple-iphone-14-pro-hub-teaser-product-bild.png"
+          class="sliderImg"
+        />
+      </div>
+    </div> -->
   </body>
 </html>
