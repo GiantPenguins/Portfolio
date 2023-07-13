@@ -12,6 +12,7 @@
     <!-- JAVASCRIPT IMPORTS -->
     <script src="index.js"></script>
     <script src="navigation/nav.js"></script>
+    <script src="picture-slider/slider.js"></script>
   </head>
 
   <body>
@@ -47,7 +48,9 @@
           </li>
 
           <li class="nav-item dropdown">
-            <button class="dropbtn">iPad</button>
+            <button class="dropbtn">
+              <a class="navButton" href="#" target="_blank">iPad</a>
+            </button>
             <div class="dropdown-content">
               <a href="#">iPad Pro</a>
               <a href="#">iPad Air</a>
@@ -56,7 +59,9 @@
           </li>
 
           <li class="nav-item dropdown">
-            <button class="dropbtn">Mac</button>
+            <button class="dropbtn">
+              <a class="navButton" href="#" target="_blank">Mac</a>
+            </button>
             <div class="dropdown-content">
               <a href="#">Macbook Pro</a>
               <a href="#">Macbook Air</a>
@@ -66,14 +71,41 @@
         </ul>
       </div>
     </nav>
-    <!-- <div class="container">
-      <div class="wrapper">
+
+    <!-- Slider Container -->
+
+    <div class="slideshow-container">
+      <div class="mySlides fade active">
         <img
-          src="
-        https://static2.o9.de/resource/image/1448900/OCCL_Ratio_1x1/600/600/dde7a40bae453cb73e625b5edf724460/F8AE33EC630BF66CB293288C658B29B8/apple-iphone-14-pro-hub-teaser-product-bild.png"
-          class="sliderImg"
+          src="https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg"
+          class="containerImg"
         />
+        <div class="text">MacBook Pro</div>
       </div>
-    </div> -->
+
+      <div class="mySlides fade">
+        <img
+          src="https://images.pexels.com/photos/797519/pexels-photo-797519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        />
+        <div class="text">iPhone 14 Pro</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="https://images.pexels.com/photos/1334597/pexels-photo-1334597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        />
+        <div class="text">iPad Pro</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
   </body>
 </html>
